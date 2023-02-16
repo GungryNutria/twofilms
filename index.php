@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Inicio - TwoFilms</title>
     <?php
         include 'src/views/shared/libraries.php';
     ?>
 </head>
-<body>
+<body style="height: 3000px;">
     <?php
-    include 'src/views/home/index.php';
+        include 'src/views/home/index.php';
     ?>
 </body>
 </html>
