@@ -1,11 +1,13 @@
-<link rel="stylesheet" href="src/css/home_styles.css">
-
-<header class="header">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
     <?php
-    include 'src/views/shared/menu.php';
+        include ("src/views/home/_home_section.php");
     ?>
-        <div class="header__texto">
-            <h1 class="header-titulo">TWO FILM</h1>
-            <p class="header-parrafo">Productora Audiovisual</p>
-        </div>
-    </header>
+</body>
+</html>
