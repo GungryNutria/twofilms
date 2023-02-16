@@ -1,9 +1,8 @@
 <?php
 
-    public class Conexion{
+    class Conexion{
 
         public function crearConexion(){
-              
             $dbHost = "localhost";  
             $dbName = "db_two_film";  
             $dbUser = "root"; 
@@ -17,7 +16,6 @@
                 Echo "Not connected, check " . $e->getMessage();  
                 return null;
             }    
-  
         }
 
         public function cerrarConexion($dbConn){
@@ -26,5 +24,6 @@
         }
 
     }
-
+    $conexion = new Conexion();
+    $conexion->crearConexion();
 ?>
