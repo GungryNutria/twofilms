@@ -12,11 +12,13 @@
         include 'src/views/shared/libraries.php';
     ?>
 </head>
-<body id="body">
-    <?php
-    include 'src/views/home/index.php';
-    ?>
+<body>
 
+<div id="root" style="height: 2000px; " class="ocultar">
+    <?php
+        include 'src/views/home/index.php';
+    ?>
+</div>
     <script src="src/js/app.js"></script>    
     <script src="src/js/cuerpo.js"></script>
 
