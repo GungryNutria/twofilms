@@ -14,7 +14,7 @@
 </head>
 <body>
 
-<div id="root" style="height: 2000px; " class="ocultar">
+<div id="root" style="height: 2000px; overflow-y: hidden;">
     <?php
         include 'src/views/home/index.php';
     ?>
