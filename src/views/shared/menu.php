@@ -1,4 +1,4 @@
-<div class="menu">
+<div class="menu" id="menu">
             <a class="logo" href=""><img src="src/assets/Logo_Blanco.png" alt=""></a>
             <button class="abrir-menu" id="abrir">
                 <svg class="abrir" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">

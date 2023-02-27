@@ -1,43 +1,48 @@
-:root{
+:root {
     --fuenteTitulo: 'Paytone One', sans-serif;
     --fuentePrincipal: 'Bebas Neue', cursive;
 }
 
-html{
+html {
     box-sizing: border-box;
-    font-size: 62.5%; /* 1rem = 10px */
+    font-size: 62.5%;
+    /* 1rem = 10px */
 }
-*, *:before, *:after{
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
 }
 
-body{
+body {
     margin: 0;
+    height: 2000px;
 }
 
-h1{
+h1 {
     font-family: var(--fuentePrincipal);
     font-size: 8.5rem;
 }
 
-p{
+p {
     font-family: var(--fuentePrincipal);
     font-size: 2rem;
 }
 
-img{
+img {
     max-width: 100%;
 }
 
-.logo{
+.logo {
     width: 10rem;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,13 +51,13 @@ a{
     padding: 0 50px;
 }
 
-.nav_lista{
+.nav_lista {
     display: flex;
     gap: 2rem;
 }
 
-.nav_enlace{
-    display:block;
+.nav_enlace {
+    display: block;
     text-align: center;
     font-size: 2.8rem;
     color: white;
@@ -61,13 +66,20 @@ a{
 }
 
 .abrir-menu,
-.cerrar-menu{
+.cerrar-menu {
     display: none;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 @media (max-width: 763px) {
+
     .abrir-menu,
-    .cerrar-menu{
+    .cerrar-menu {
         display: block;
         border: 0;
         font-size: 2.5rem;
@@ -75,18 +87,17 @@ a{
         cursor: pointer;
     }
 
-    .abrir-menu{
+    .abrir-menu {
         color: #fff;
     }
 
-    .cerrar-menu{
+    .cerrar-menu {
         color: #fff;
     }
 
-    .nav{
+    .nav {
         opacity: 0;
         visibility: hidden;
-
         display: flex;
         flex-direction: column;
         align-items: end;
@@ -100,18 +111,18 @@ a{
         box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .6);
     }
 
-    .nav.visible{
+    .nav.visible {
         opacity: 1;
         visibility: visible;
     }
 
-    .nav_lista{
+    .nav_lista {
         display: flex;
         flex-direction: column;
         align-items: end;
     }
 
-    .ocultar{
+    .ocultar {
         overflow: hidden;
     }
 }

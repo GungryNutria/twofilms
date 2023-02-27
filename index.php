@@ -12,15 +12,13 @@
         include 'src/views/shared/libraries.php';
     ?>
 </head>
-<body>
+<body id="body">
 
-<div id="root" style="height: 2000px; overflow-y: hidden;">
+<div id="root">
     <?php
         include 'src/views/home/index.php';
     ?>
 </div>
-    <script src="src/js/app.js"></script>    
-    <script src="src/js/cuerpo.js"></script>
-
+    <script src="src/js/app.js"></script>
 </body>
 </html>
