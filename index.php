@@ -11,7 +11,7 @@
         include 'src/views/shared/libraries.php';
     ?>
 </head >
-<body style="height: 3000px;" onload="imagen()">
+<body onload="imagen()">
     <?php
         include 'src/views/home/index.php';
     ?>
