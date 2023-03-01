@@ -22,7 +22,9 @@ window.onscroll = function () {
     console.log(y);
     if(y > 160){
         menu.classList.add("sticky");
+        nav.classList.add("sticky-menu");
     }else{
         menu.classList.remove("sticky");
+        nav.classList.remove("sticky-menu");
     }
 };
