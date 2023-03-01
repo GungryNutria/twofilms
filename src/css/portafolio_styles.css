@@ -20,12 +20,13 @@
 
 #carrusel {
     float: left;
-    width: 832px;
+    width: 1054px;
     overflow: hidden;
     height: 550px;
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 5px;
 }
 
 #carrusel .left-arrow {
@@ -69,11 +70,19 @@ i {
     font-size: 2rem;
 }
 
-.carrusel>div {
+.carrusel {
+    width: 4000px;
+    left: 0px;
+    position: absolute;
+    z-index: 0;
+    transition: margin-left 250ms;
+}
+
+.carrusel div.product {
     float: left;
-    height: 550px;
+    height: 558px;
     margin-right: 5px;
-    width: 272px;
+    width: 353px;
     text-align: center;
 }
 

@@ -10,10 +10,13 @@
     <?php
         include 'src/views/shared/libraries.php';
     ?>
-</head>
-<body style="height: 3000px;">
+</head >
+<body style="height: 3000px;" onload="imagen()">
     <?php
         include 'src/views/home/index.php';
+    ?>
+    <?php
+        include 'src/views/shared/librarie_js.php'
     ?>
 </body>
 </html>
