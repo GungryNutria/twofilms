@@ -94,3 +94,21 @@ i {
     border-radius: 10px;
     cursor: pointer;
 }
+@media only screen and (max-width: 1057px){
+    #carrusel {
+        float: left;
+        width: 88%;
+        overflow: hidden;
+        height: 550px;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+    .container-texto h1{
+        font-size: 1rem;
+    }
+    .separacion {
+        font-size: 1rem;
+    }
+}

@@ -5,7 +5,8 @@ const carrusel = document.querySelector(".carrusel");
 let imagenes = document.getElementsByClassName("product").length;
 
 let width = 353;
-let imaganesVisibles = 3;
+imaganesVisibles = screen.width <= 801 ? 2 :
+screen.width <= 395 ? 1 : 3;
 
 let position = 0;
 
