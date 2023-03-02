@@ -1,6 +1,7 @@
 <section class="container-contacto">
     <div class="titulo-seccion-contacto">
         <h1>Platicanos tu d&iacute;a</h1>
+    </div>
         <div class="form-contacto">
             <form method="get" action="">
                 <div>
@@ -20,5 +21,4 @@
                 </div>
             </form>
         </div>
-    </div>
 </section>

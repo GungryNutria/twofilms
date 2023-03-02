@@ -13,7 +13,7 @@
     background-color: #fffffd;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
@@ -23,7 +23,7 @@
     flex-direction: column;
     width: 350px;
     height: 90%;
-    gap: 10px;
+    gap: 30px;
 }
 
 .form-contacto {
@@ -40,7 +40,7 @@ input::placeholder {
     background-color: rgb(179, 179, 179);
     border: none;
     border-radius: 10px;
-    color: white;
+    color: rgb(92, 92, 92);
     outline: none;
 }
 
@@ -50,7 +50,7 @@ textarea:focus {
     width: 100%;
     border: none;
     border-radius: 10px;
-    color: white;
+    color: rgb(92, 92, 92);
     outline: none;
     background-color: rgb(179, 179, 179);
     padding: 5px;
@@ -59,5 +59,31 @@ textarea:focus {
 .titulo-seccion-contacto h1{
     text-transform: uppercase;
     letter-spacing: 5px;
-    margin-bottom: 150px;
+}
+button{
+    width: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(179, 179, 179);
+    border-radius: 15px;
+    color: rgb(92, 92, 92);
+    transition: all .6s ease-out;
+}
+button:hover{
+    background-color: rgb(92, 92, 92);
+    color: rgb(179, 179, 179);
+    transition: all .6s ease-out;
+}
+@media only screen and (max-width: 600px){
+    .form-contacto form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90%;
+        gap: 30px;
+    }
+    .form-contacto {
+        width: 70%;
+    }
 }
