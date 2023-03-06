@@ -5,9 +5,9 @@
             Pariatur reprehenderit adipisicing consequat officia ea aute officia. Tempor voluptate culpa sunt mollit irure consectetur consequat aliquip aute non non mollit culpa. Voluptate qui ex cillum esse ut consequat sit tempor qui. Eu occaecat consequat non amet nostrud aliqua sunt aliqua fugiat minim culpa fugiat.
         </div>
         <div class="network-social">
-            <div><a href="#"><img src="src/assets/iconos/icons8-instagram.svg" alt=""></a></div>
-            <div><a href="#"><img src="src/assets/iconos/icons8-facebook.svg" alt=""></a></div>
-            <div><a href="#"><img src="src/assets/iconos/icons8-whatsapp.svg" alt=""></a></div>
+            <div><a href="https://www.instagram.com/two.film/" target="_blanck"><img src="src/assets/iconos/icons8-instagram.svg" alt=""></a></div>
+            <div><a href="https://www.facebook.com/tweeling.Films" target="_blanck"><img src="src/assets/iconos/icons8-facebook.svg" alt=""></a></div>
+            <div><a href="https://wa.me/5517630755?text=Hola,%20quiero%20mas%20informes" target="_blanck"><img src="src/assets/iconos/icons8-whatsapp.svg" alt=""></a></div>
         </div>
     </div>
 
