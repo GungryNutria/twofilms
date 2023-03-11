@@ -1,6 +1,6 @@
 <section class="container_login">
     <div class="container-form">
-        <form action="" method="post" class="form">
+        <form action="src/controllers/ControllerLogin.php" method="post" class="form">
             <legend>TWO FILM</legend>
             <div class="secciones"><input type="email" required name="email" id="email" placeholder="Email"></div>
             <div class="secciones">

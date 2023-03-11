@@ -1,29 +1,38 @@
 <?php
 
-    class Conexion{
+class Conexion
+{
 
-        public function crearConexion(){
-            $dbHost = "localhost";  
-            $dbName = "db_two_film";  
-            $dbUser = "root"; 
-            $dbPassword = "admin";
-            try{  
-                $dbConn = new PDO("mysql:host=$dbHost;dbname=$dbName",$dbUser,$dbPassword);  
-                Echo "Connected"; 
-                return $dbConn;
-
-            } catch(Exception $e){  
-                Echo "Not connected, check " . $e->getMessage();  
-                return null;
-            }    
+    public function crearConexion()
+    {
+        $dbHost = "localhost";
+        $dbName = "db_twoFilm";
+        $dbUser = "root";
+        $dbPassword = "admin";
+        try {
+            $dbConn = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
+            $dbConn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            echo "Connected";
+            return $dbConn;
+        } catch (Exception $e) {
+            echo "Not connected, check " . $e->getMessage();
+            return null;
         }
-
-        public function cerrarConexion($dbConn){
-            $dbConn = null;
-            Echo "Disconnected"; 
-        }
-
     }
-    $conexion = new Conexion();
-    $conexion->crearConexion();
-?>
+
+    public function cerrarConexion($dbConn)
+    {
+        $dbConn = null;
+        echo "Disconnected";
+    }
+}
+$consulta = "SELECT * FROM tb_usuario WHERE correo = :correo AND pass = :password";
+$conexion = new Conexion();
+$resultado = $conexion->crearConexion();
+$hola = $resultado->prepare($consulta);
+$hola->execute([":correo" => "antoniotorresj15@gmail.com", ":password" => md5("Ju.55.25.17")]);
+$hola->fetchAll(PDO::FETCH_ASSOC);
+foreach($hola as $row){
+    echo "hola";
+    echo $row['nombre'];
+}
