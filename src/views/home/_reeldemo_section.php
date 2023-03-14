@@ -1,1 +1,3 @@
-<h1>Reel Demo</h1>
+<div class="cuerpo">
+    <h1 class="titulo">Demo Reel</h1> 
+</div>
