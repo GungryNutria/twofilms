@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php
-    include 'src/views/home/index.php';
+    include 'src/views/home/_sobremi_section.php';
     ?>
 </body>
 </html>

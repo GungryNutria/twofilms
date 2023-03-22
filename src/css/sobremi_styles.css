@@ -1,0 +1,155 @@
+:root{
+    --fuentePrincipal: 'Bebas Neue', cursive;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;    
+}
+
+.fondo{
+    background-image: url(../assets/HOJA6.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.container{
+    max-width: 960px;
+    margin-inline: auto;
+}
+
+.title{
+    margin:0;
+    padding-top: 3rem;  
+}
+
+.title span{
+    display: block;
+    font-family: var(--fuentePrincipal);
+}
+
+.title .primary{
+    font-size: clamp(26px, 5vw, 52px);
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+}
+
+.gallery-wrapper{
+    display: flex;
+}
+
+.gallery-item{
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex: 1;
+    height: 500px;
+    background: rgb(56,0,10);
+    background: linear-gradient(90deg, rgba(56,0,10,1) 0%, rgba(115,0,31,1) 30%);
+    padding: 25px;
+    opacity: 1;
+    overflow: hidden;
+    transition: flex 0.5s, opacity 0.25s;
+}
+
+.gallery-item:hover{
+    opacity: 0.75;
+}
+
+.item-image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item-description{
+    align-self: flex-end;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.name{
+    font-size: 40px;
+    font-family: var(--fuentePrincipal);
+    padding-inline: 10px;
+    letter-spacing: .6rem;
+    transform: translateY(-10px);
+}
+
+.role{
+    display: inline-block;
+    font-size: 30px;
+    font-family: var(--fuentePrincipal);
+    letter-spacing: .3rem;
+    padding: 10px;
+    transform: translateY(10px);
+}
+
+.name,
+.role{
+    opacity: 0;
+    transition: opacity 0.25s, transform 0.35s;
+    transition-delay: .35s;
+}
+
+.gallery-item:hover .name,
+.gallery-item:hover .role{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.gallery-item:not(:hover) .name,
+.gallery-item:not(:hover) .role{
+    transition-delay: 0s;
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-wrapper{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .gallery-item:hover{
+        flex-basis: 100%;
+    }
+
+    .gallery-item{
+        position: relative;
+        isolation: isolate;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        flex: 1;
+        height: 500px;
+        width: 300px;
+        background: rgb(56,0,10);
+        background: linear-gradient(90deg, rgba(56,0,10,1) 0%, rgba(115,0,31,1) 30%);
+        padding: 25px;
+        opacity: 1;
+        overflow: hidden;
+        transition: flex 0.5s, opacity 0.25s;
+    }
+
+    .name{
+        font-size: 28px;
+    }
+    
+    .role{
+        font-size: 25px;
+    }
+}
