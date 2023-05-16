@@ -2,8 +2,8 @@
 include "src/models/SessionModel.php";
 $sesion = new SessionesModel();
 
-if ($sesion->getSession() == "") {
-    echo "Si hay session";
+if ($sesion->getSession() != "") {
+    echo "Si hay session prro";
 } else {
 ?>
     <section class="container_login">
